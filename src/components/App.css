@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*#ebedf8*/
+
+:root{
+    --main-font-color: #354052;
+    --light-font-color: #8a96a0;
+    --white-font-color: #ffffff;
+
+    --main-border-color: #ebedf8;
+
+    --main-background-color: #fafbfc;
+    --white-background-color: #ffffff;
+
+    --icons-idle-color: #C0C5D2;
+
+    --main-blue-color: #0077ff;
+    --main-pink-color: #f0166d;
+}
+
+html {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 10px;
+}
