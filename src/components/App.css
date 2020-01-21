@@ -12,10 +12,11 @@
     --main-background-color: #fafbfc;
     --white-background-color: #ffffff;
 
+    --icons-idle-color: #C0C5D2;
+
     --main-blue-color: #0077ff;
     --main-pink-color: #f0166d;
 }
-
 
 html {
     font-family: 'Lato', Helvetica, sans-serif;

@@ -15,14 +15,14 @@ const App = () => {
     return (
         <>
             <Header/>
-            <AppContainer>
-                <Nav/>
-                <Router history={history}>
+            <Router history={history}>
+                <AppContainer>
+                    <Nav/>
                     <Switch>
                         <Route exact path={'/'} component={Dashboard}/>
                     </Switch>
-                </Router>
-            </AppContainer>
+                </AppContainer>
+            </Router>
         </>
     );
 };
