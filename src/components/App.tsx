@@ -1,21 +1,29 @@
 import React from 'react';
-import {Router, Switch} from 'react-router-dom';
-import styled from 'styled-components';
-import {history} from '../commons';
+
 import './App.css';
+
+import { Router, Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import { history } from '../commons';
+import Header from './common/header';
+import Nav from './common/nav';
+import Dashboard from './dashboard';
 
 const AppContainer = styled.div``;
 
 const App = () => {
     return (
-        <AppContainer>
-            <Router history={history}>
-                <h1>Hey</h1>
-                <Switch>
-
-                </Switch>
-            </Router>
-        </AppContainer>
+        <>
+            <Header/>
+            <AppContainer>
+                <Nav/>
+                <Router history={history}>
+                    <Switch>
+                        <Route exact path={'/'} component={Dashboard}/>
+                    </Switch>
+                </Router>
+            </AppContainer>
+        </>
     );
 };
 
