@@ -12,8 +12,9 @@ const LogoContainer = styled.div`
         height: 100%;
     }
 `;
-const NavContainer = styled.div`
+const HeaderContainer = styled.div`
     display: flex;
+    border-bottom: .2rem solid var(--main-border-color);
     flex-direction: row;
     padding: 1rem 2.1rem 0.9rem 1.2rem;
     align-items: center;
@@ -22,12 +23,15 @@ const NavContainer = styled.div`
 
 const Header = () => {
     return (
-        <NavContainer>
+        <HeaderContainer>
             <LogoContainer>
                 <Logo/>
             </LogoContainer>
+
+            {/* TODO: add inner menu */}
+
             <Button title={'Premium'} click={() => alert('Stub alert')} primary={true}/>
-        </NavContainer>
+        </HeaderContainer>
     )
 };
 
