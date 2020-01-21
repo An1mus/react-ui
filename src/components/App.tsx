@@ -2,6 +2,7 @@ import React from 'react';
 import {Router, Switch} from 'react-router-dom';
 import styled from 'styled-components';
 import {history} from '../commons';
+import './App.css';
 
 const AppContainer = styled.div``;
 

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
