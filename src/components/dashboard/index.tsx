@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { PageContainer } from '../common/containers';
 import Progress from '../common/progress';
 import ChartElement from './charts';
+import Terms from './terms';
 
 const DataOverviewContainer = styled.div`
     border-radius: 0.4rem;
     border: solid 0.2rem var(--main-border-color);
-    background-color: var(--white-background-color);
-    
     display: flex;
 `;
 
@@ -40,6 +39,8 @@ const ChartContainer = styled.div`
     padding: 2.8rem 2.4rem;
 `;
 
+
+// Presentational purposes
 const TermContainer = styled.div`
     border-bottom: solid 0.2rem var(--main-border-color);
     padding: 3.3rem 3.5rem;
@@ -49,7 +50,6 @@ const TermContainer = styled.div`
 const Dashboard = () => {
     return (
         <PageContainer>
-
             <UpperContainer>
                 <h2>Data overview</h2>
 
@@ -73,7 +73,7 @@ const Dashboard = () => {
                     </ChartContainer>
 
                     <TermContainer>
-                        Some terms
+                        <Terms />
                     </TermContainer>
                 </UpperDataOverviewContainer>
             </DataOverviewContainer>

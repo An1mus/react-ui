@@ -32,8 +32,9 @@ const BarContainer = styled.div`
 `;
 
 const Bar = styled.div`
+    animation: rise 1s ease-out forwards;
     border-radius: 0.2rem;
-    height: ${props => props.height ? props.height : 2}rem;
+    height: ${props => props.height}rem;
     width: 1.2rem;
 `;
 
