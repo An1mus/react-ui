@@ -11,10 +11,11 @@ const UpperContainer = styled.div`
 
 const ProgressContainer = styled.div`
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     
     p {
         margin-left: 1.2rem;
+        margin-bottom: 0.3rem;
     }
 `;
 

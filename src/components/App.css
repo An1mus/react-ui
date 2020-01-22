@@ -76,6 +76,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    font-weight: normal;
 }
 
 h3 {
@@ -85,4 +86,14 @@ h3 {
 
 p {
     font-size: 1.2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }

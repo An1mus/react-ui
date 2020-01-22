@@ -7,7 +7,7 @@ const CircularChartContainer = styled.div`
     
     .circular-chart {
         display: block;
-        margin: 1rem 0 1rem 2rem;
+        margin: 1rem 0 1rem 2.8rem;
         max-width: 80%;
         max-height: 25rem;
     }
