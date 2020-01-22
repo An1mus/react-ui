@@ -7,9 +7,9 @@ const CircularChartContainer = styled.div`
     
     .circular-chart {
         display: block;
-        margin: 10px 0 10px 20px;
+        margin: 1rem 0 1rem 2rem;
         max-width: 80%;
-        max-height: 250px;
+        max-height: 25rem;
     }
     
     .circle {
@@ -25,7 +25,7 @@ const CircularChartContainer = styled.div`
     .circle,
     .circle-bg{
         fill: none;
-        stroke-width: 2.8;
+        stroke-width: 3.5;
         stroke-linecap: round;
     }
     

@@ -45,9 +45,10 @@ const AxisMark = styled.p`
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
+    text-align: center;
     margin-top: 0.5rem;
     color: #8a96a0;
-    width: 0.5rem;
+    width: 1.2rem;
 `;
 
 interface Props {
