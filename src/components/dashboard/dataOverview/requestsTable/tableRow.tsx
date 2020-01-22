@@ -28,7 +28,7 @@ const Button = styled.button`
     }
 `;
 
-const TableRow = ({rowData}) => {
+const TableRow = ({rowData, sendEmail}) => {
     const {name, email, timestamp, phoneNumber, city, status} = rowData;
     return (
         <tr className='color-light'>
@@ -37,7 +37,7 @@ const TableRow = ({rowData}) => {
             <td>{timestamp}</td>
             <td>{phoneNumber}</td>
             <td>{city}</td>
-            <td>{status === 'sent' ? <Label>Sent</Label> : <Button onClick={() => alert('Clicked')}>Send</Button> }</td>
+            <td>{status === 'sent' ? <Label>Sent</Label> : <Button onClick={() => sendEmail(email)}>Send</Button> }</td>
         </tr>
     );
 };

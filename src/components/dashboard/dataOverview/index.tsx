@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { PageContainer } from '../../common/containers';
 import DataOverviewHeader from './dataOverviewHeader';
 import DataOverviewContent from './dataOverviewContent';
-import getData from '../../../redux/actions/dataActions';
+import {getData, insertRow, sendEmail} from '../../../redux/actions/dataActions';
 
-const DataOverview = ({data, getData}) => {
+const DataOverview = ({data, getData, insertRow, sendEmail}) => {
     useEffect(() => {
         getData();
     }, []);
@@ -17,7 +17,7 @@ const DataOverview = ({data, getData}) => {
                     ?
                         <>
                             <DataOverviewHeader insertions={data.general.insertionsCount}/>
-                            <DataOverviewContent data={data}/>
+                            <DataOverviewContent data={data} addRow={insertRow} sendEmail={sendEmail}/>
                         </>
                     : <h2>Data is loading</h2>
 
@@ -34,7 +34,9 @@ const mapStoreToProps = (store) => {
 };
 
 const mapDispatchToProps = {
-    getData
+    insertRow,
+    getData,
+    sendEmail
 };
 
 export default connect(mapStoreToProps, mapDispatchToProps)(DataOverview);
