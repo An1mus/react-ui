@@ -13,10 +13,10 @@ const NavContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 4rem 0rem;
-    /*position: fixed;
+    position: fixed;
     left: 0;
     top: 6.2rem;
-    bottom: 0;*/
+    bottom: 0;
 `;
 
 const Nav = () => {

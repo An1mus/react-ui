@@ -9,6 +9,7 @@ import InDevelopment from '../indev';
 
 const AppContainer = styled.div`
     display: flex;
+    justify-content: flex-end;
     min-height: calc(100vh - 6.2rem);
 `;
 

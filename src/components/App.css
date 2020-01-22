@@ -24,9 +24,13 @@ time, mark, audio, video {
     --main-font-color: #1a173b;
     --main-table-font-color: #354052;
     --light-font-color: #8a96a0;
+    --lighter-font-color: #aab2c0;
     --white-font-color: #ffffff;
 
     --main-border-color: #ebedf8;
+
+    --progress-bar-background-color: #c7cdd9;
+    --progress-bar-bar-color: #0077ff;
 
     --main-background-color: #fafbfc;
     --white-background-color: #ffffff;
@@ -45,4 +49,15 @@ html {
     line-height: normal;
     letter-spacing: normal;
     font-size: 10px;
+}
+
+
+.color-regular {
+    color: var(--main-font-color);
+}
+.color-light {
+    color: var(--light-font-color);
+}
+.color-lighter {
+    color: var(--lighter-font-color);
 }
