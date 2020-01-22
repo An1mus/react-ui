@@ -51,7 +51,6 @@ html {
     font-size: 10px;
 }
 
-
 .color-regular {
     color: var(--main-font-color);
 }
@@ -79,6 +78,10 @@ h2 {
     font-size: 2rem;
 }
 
-h4 {
+h3 {
     font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.2rem;
 }

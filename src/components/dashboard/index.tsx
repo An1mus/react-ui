@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { PageContainer } from '../common/containers';
 import Progress from '../common/progress';
+import ChartElement from './charts';
 
 const DataOverviewContainer = styled.div`
     border-radius: 0.4rem;
@@ -61,11 +62,11 @@ const Dashboard = () => {
             <DataOverviewContainer>
                 <UpperDataOverviewContainer>
                     <ChartContainer>
-
+                        <ChartElement title={'General results'} followers={9401} color={'blue'}/>
                     </ChartContainer>
 
                     <ChartContainer>
-
+                        <ChartElement title={'Rating by category'} followers={3900} color={'pink'}/>
                     </ChartContainer>
 
                     <TermContainer>
