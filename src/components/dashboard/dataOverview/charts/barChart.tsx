@@ -39,6 +39,7 @@ const Bar = styled.div`
 `;
 
 const AxisMark = styled.p`
+    display: block;
     font-size: 1.2rem;
     font-weight: normal;
     font-stretch: normal;
@@ -46,6 +47,7 @@ const AxisMark = styled.p`
     line-height: 2;
     margin-top: 0.5rem;
     color: #8a96a0;
+    width: 0.5rem;
 `;
 
 interface Props {

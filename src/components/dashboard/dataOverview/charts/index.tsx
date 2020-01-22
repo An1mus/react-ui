@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import BarChart from './barChart';
 import CircleChart from './circularChart';
 
