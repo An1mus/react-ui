@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Router, Route, Switch } from 'react-router-dom';
+import {history} from '../../commons/index'
 import Nav from '../common/nav';
 import Dashboard from '../dashboard';
 import NotFound from '../notfound';
@@ -21,7 +22,7 @@ const ContentContainer = styled.div`
 `;
 
 const Routes = () => (
-    <Router >
+    <Router history={history}>
         <AppContainer>
             <Nav/>
             <ContentContainer>
