@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.h2`
+const Heading = styled.h2`
   font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -17,7 +17,7 @@ interface Props {
 
 const Heading2 = ({text}: Props) => {
     return (
-        <Container>{text}</Container>
+        <Heading>{text}</Heading>
     )
 };
 
