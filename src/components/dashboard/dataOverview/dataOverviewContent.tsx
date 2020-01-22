@@ -30,7 +30,7 @@ const TermContainer = styled.div`
     flex: 1 1 0;
 `;
 
-const DataOverviewContent = ({data}) => {
+const DataOverviewContent = ({data, addRow}) => {
     const {charts, terms, supportRequests} = data;
     return (
         <DataOverviewContainer>
@@ -48,7 +48,7 @@ const DataOverviewContent = ({data}) => {
                 </TermContainer>
             </UpperDataOverviewContainer>
 
-            <RequestTableHolder requests={supportRequests}/>
+            <RequestTableHolder requests={supportRequests} addRow={addRow}/>
         </DataOverviewContainer>
     );
 };
