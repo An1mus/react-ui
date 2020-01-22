@@ -7,9 +7,9 @@ const CircularChartContainer = styled.div`
     
     .circular-chart {
         display: block;
-        margin: 10px auto;
+        margin: 1rem 0 1rem 2.8rem;
         max-width: 80%;
-        max-height: 250px;
+        max-height: 25rem;
     }
     
     .circle {
@@ -25,7 +25,7 @@ const CircularChartContainer = styled.div`
     .circle,
     .circle-bg{
         fill: none;
-        stroke-width: 2.8;
+        stroke-width: 3.5;
         stroke-linecap: round;
     }
     
@@ -50,13 +50,13 @@ const CircleChart = ({color}) => {
         <CircularChartContainer color={color}>
             <svg viewBox="0 0 36 36" className="circular-chart">
                 <path className="circle-bg"
-                      stroke-dasharray="100, 100"
+                      strokeDasharray="100, 100"
                       d="M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
                          a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path className="circle"
-                      stroke-dasharray={(Math.random() * 30 + 50) + ", 100"}
+                      strokeDasharray={(Math.random() * 30 + 50) + ", 100"}
                       d="M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
                          a 15.9155 15.9155 0 0 1 0 -31.831"

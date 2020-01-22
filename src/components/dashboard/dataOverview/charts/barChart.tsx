@@ -32,19 +32,23 @@ const BarContainer = styled.div`
 `;
 
 const Bar = styled.div`
+    animation: rise 1s ease-out forwards;
     border-radius: 0.2rem;
-    height: ${props => props.height ? props.height : 2}rem;
+    height: ${props => props.height}rem;
     width: 1.2rem;
 `;
 
 const AxisMark = styled.p`
+    display: block;
     font-size: 1.2rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
+    text-align: center;
     margin-top: 0.5rem;
     color: #8a96a0;
+    width: 1.2rem;
 `;
 
 interface Props {
