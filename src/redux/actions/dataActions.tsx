@@ -1,4 +1,4 @@
-import { ADD_ROW, GET_ALL_DATA_REQUEST, GET_ALL_DATA_RESPONDED } from '../actionTypes';
+import { ADD_ROW, GET_ALL_DATA_REQUEST, GET_ALL_DATA_RESPONDED, SEND_EMAIL } from '../actionTypes';
 import {getInitialData} from '../../services/dataService';
 
 const ADDITIONAL_DATA = [
@@ -60,4 +60,10 @@ function insertRow() {
     }
 };
 
-export {getData, insertRow};
+function sendEmail(email) {
+    return dispatch => {
+        dispatch({type: SEND_EMAIL, payload: email})
+    };
+};
+
+export {getData, insertRow, sendEmail};

@@ -26,7 +26,7 @@ const RequestTableContainer = styled.div`
     }
 `;
 
-const RequestTable = ({tableData}) => {
+const RequestTable = ({tableData, sendEmail}) => {
     const TableFields = ['Name', 'Email', 'Time', 'Phone number', 'City', 'Status'];
 
     return (
@@ -40,7 +40,7 @@ const RequestTable = ({tableData}) => {
 
                 <tbody>
                     {tableData.map((row, index) => (
-                        <TableRow key={index} rowData={row}/>
+                        <TableRow key={index} rowData={row} sendEmail={sendEmail}/>
                     ))}
                 </tbody>
             </table>
