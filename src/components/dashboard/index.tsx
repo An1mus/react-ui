@@ -30,17 +30,20 @@ const ProgressContainer = styled.div`
 
 const UpperDataOverviewContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    width: 100%;
 `;
 
 const ChartContainer = styled.div`
-    padding: 2.1rem 2.4rem;
-    width: 40%;
+    border-right: solid 0.2rem var(--main-border-color);
+    border-bottom: solid 0.2rem var(--main-border-color);
+    flex: 2 1 0;
+    padding: 2.8rem 2.4rem;
 `;
 
 const TermContainer = styled.div`
+    border-bottom: solid 0.2rem var(--main-border-color);
     padding: 3.3rem 3.5rem;
-    width: 20%:
+    flex: 1 1 0;
 `;
 
 const Dashboard = () => {
@@ -70,7 +73,7 @@ const Dashboard = () => {
                     </ChartContainer>
 
                     <TermContainer>
-
+                        Some terms
                     </TermContainer>
                 </UpperDataOverviewContainer>
             </DataOverviewContainer>

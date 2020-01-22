@@ -5,6 +5,7 @@ const BarChartContainer = styled.div`
     display: flex;
     align-items: flex-end;
     margin-top: 1.5rem;
+    height: 12rem;
     
     .bar {
         background-color: ${props => props.color === 'blue' ? 'var(--main-blue-color)' : 'var(--main-pink-color)'};
@@ -18,13 +19,14 @@ const BarContainer = styled.div`
     
     &:nth-child(even) {
         .bar {
-            opacity: 0.5;
+            opacity: 0.3;
             margin: 0 0.7rem;
         }
         
         .bar,
         p {
-            margin: 0 0.7rem;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
         }
     }
 `;
@@ -41,6 +43,7 @@ const AxisMark = styled.p`
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
+    margin-top: 0.5rem;
     color: #8a96a0;
 `;
 
