@@ -50,9 +50,14 @@ function getData() {
 };
 
 function insertRow() {
-    return dispatch => {
-        dispatch({type: ADD_ROW, payload: ADDITIONAL_DATA.pop()})
-    };
+    if(ADDITIONAL_DATA.length > 0){
+        return dispatch => {
+            dispatch({type: ADD_ROW, payload: ADDITIONAL_DATA.pop()})
+        };
+    } else {
+        alert('No more records --\__(0_o)__/-- so let\'s get the old data');
+        return getData();
+    }
 };
 
 export {getData, insertRow};
