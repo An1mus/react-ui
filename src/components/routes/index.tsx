@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import Nav from '../common/nav';
 import Dashboard from '../dashboard';
 import NotFound from '../notfound';
@@ -21,7 +21,7 @@ const ContentContainer = styled.div`
 `;
 
 const Routes = () => (
-    <HashRouter >
+    <Router >
         <AppContainer>
             <Nav/>
             <ContentContainer>
@@ -35,7 +35,7 @@ const Routes = () => (
                 </Switch>
             </ContentContainer>
         </AppContainer>
-    </HashRouter>
+    </Router>
 );
 
 export default Routes;
