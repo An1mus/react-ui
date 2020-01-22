@@ -13,11 +13,15 @@ const LogoContainer = styled.div`
     }
 `;
 const HeaderContainer = styled.div`
-    display: flex;
+    align-items: center;
+    background: var(--white-background-color);
     border-bottom: .2rem solid var(--main-border-color);
+    display: flex;
     flex-direction: row;
     padding: 1rem 2.1rem 0.9rem 1.2rem;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-between;
 `;
 

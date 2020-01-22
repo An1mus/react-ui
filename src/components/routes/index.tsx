@@ -10,7 +10,8 @@ import InDevelopment from '../indev';
 const AppContainer = styled.div`
     display: flex;
     justify-content: flex-end;
-    min-height: calc(100vh - 6.2rem);
+    padding-top: 6.2rem;
+    min-height: 100vh;
 `;
 
 const ContentContainer = styled.div`
