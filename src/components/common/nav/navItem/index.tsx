@@ -28,14 +28,17 @@ const NavItemContainer = styled.div`
 `;
 
 interface Props {
-    item: any;
+    exact: boolean;
+    to: string;
+    title: string;
+    Icon: React.FunctionComponent;
 }
 
-const NavItem = ({item}: Props) => {
+const NavItem = ({exact, Icon, title, to}: Props) => {
     return (
         <NavItemContainer>
-            <NavLink exact={item.exact} to={item.to} title={item.title} className={'main-link'} activeClassName={'active'}>
-                    {<item.icon />}
+            <NavLink exact={exact} to={to} title={title} className={'main-link'} activeClassName={'active'}>
+                <Icon />
             </NavLink>
         </NavItemContainer>
     );

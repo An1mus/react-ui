@@ -29,7 +29,15 @@ const Nav = () => {
     ];
     return (
         <NavContainer>
-            {NavItems.map((item, index) => (<NavItem key={index} item={item}/>) )}
+            {NavItems.map((item, index) => (
+                <NavItem
+                    key={index}
+                    exact={item.exact}
+                    to={item.to}
+                    title={item.title}
+                    Icon={item.icon}
+                />
+                ))}
         </NavContainer>
     )
 };
