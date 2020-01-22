@@ -4,6 +4,8 @@ import { Route, Router, Switch } from 'react-router-dom';
 import { history } from '../../commons';
 import Nav from '../common/nav';
 import Dashboard from '../dashboard';
+import NotFound from '../notfound';
+import InDevelopment from '../indev';
 
 const AppContainer = styled.div`
     display: flex;
@@ -16,10 +18,11 @@ const Routes = () => (
             <Nav/>
             <Switch>
                 <Route exact path={'/'} component={Dashboard}/>
-                <Route exact path={'/chat'} component={Dashboard}/>
-                <Route exact path={'/files'} component={Dashboard}/>
-                <Route exact path={'/mail'} component={Dashboard}/>
-                <Route exact path={'/settings'} component={Dashboard}/>
+                <Route exact path={'/chat'} component={InDevelopment}/>
+                <Route exact path={'/files'} component={InDevelopment}/>
+                <Route exact path={'/mail'} component={InDevelopment}/>
+                <Route exact path={'/settings'} component={InDevelopment}/>
+                <Route path={'*'} component={NotFound}/>
             </Switch>
         </AppContainer>
     </Router>
