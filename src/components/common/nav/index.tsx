@@ -12,7 +12,7 @@ const NavContainer = styled.div`
     border-right: .2rem solid var(--main-border-color);
     display: flex;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
     position: fixed;
     left: 0;
     top: 6.2rem;
@@ -21,15 +21,23 @@ const NavContainer = styled.div`
 
 const Nav = () => {
     const NavItems = [
-        {to: '/', title: 'Dashboard', icon: DashboardIcon},
-        {to: '/chat', title: 'Chat', icon: ChatIcon},
-        {to: '/files', title: 'Files', icon: FolderIcon},
-        {to: '/mail', title: 'Mail', icon: MailIcon},
-        {to: '/settings', title: 'Settings', icon: SettingIcon},
+        {exact: true, to: '/', title: 'Dashboard', icon: DashboardIcon},
+        {exact: false, to: '/chat', title: 'Chat', icon: ChatIcon},
+        {exact: false, to: '/files', title: 'Files', icon: FolderIcon},
+        {exact: false, to: '/mail', title: 'Mail', icon: MailIcon},
+        {exact: false, to: '/settings', title: 'Settings', icon: SettingIcon},
     ];
     return (
         <NavContainer>
-            {NavItems.map((item, index) => (<NavItem key={index} item={item}/>) )}
+            {NavItems.map((item, index) => (
+                <NavItem
+                    key={index}
+                    exact={item.exact}
+                    to={item.to}
+                    title={item.title}
+                    Icon={item.icon}
+                />
+                ))}
         </NavContainer>
     )
 };

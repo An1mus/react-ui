@@ -3,6 +3,18 @@ import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 
 const NavItemContainer = styled.div`
+    .main-link {
+        border-right: 0.2rem solid var(--main-border-color);
+        display: block;
+        padding: 1.6rem 2rem;
+        position: relative;
+        margin: 0.5rem -0.2rem 0.5rem 0;
+        
+        &.active {
+            border-right: 0.2rem solid var(--main-blue-color);
+        }
+    }
+
     svg {
         fill: var(--icons-idle-color);
     }
@@ -16,14 +28,17 @@ const NavItemContainer = styled.div`
 `;
 
 interface Props {
-    item: any;
+    exact: boolean;
+    to: string;
+    title: string;
+    Icon: React.FunctionComponent;
 }
 
-const NavItem = ({item}: Props) => {
+const NavItem = ({exact, Icon, title, to}: Props) => {
     return (
         <NavItemContainer>
-            <NavLink to={item.to} title={item.title} activeClassName={'active'}>
-                    {<item.icon />}
+            <NavLink exact={exact} to={to} title={title} className={'main-link'} activeClassName={'active'}>
+                <Icon />
             </NavLink>
         </NavItemContainer>
     );

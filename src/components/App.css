@@ -1,13 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-/*#ebedf8*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 :root{
-    --main-font-color: #354052;
+    --main-font-color: #1a173b;
+    --main-table-font-color: #354052;
     --light-font-color: #8a96a0;
+    --lighter-font-color: #aab2c0;
     --white-font-color: #ffffff;
 
     --main-border-color: #ebedf8;
+
+    --progress-bar-background-color: #c7cdd9;
+    --progress-bar-bar-color: #0077ff;
 
     --main-background-color: #fafbfc;
     --white-background-color: #ffffff;
@@ -26,4 +49,40 @@ html {
     line-height: normal;
     letter-spacing: normal;
     font-size: 10px;
+}
+
+.color-regular {
+    color: var(--main-font-color);
+}
+.color-light {
+    color: var(--light-font-color);
+}
+.color-lighter {
+    color: var(--lighter-font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+    color: var(--main-font-color);
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2rem;
 }
