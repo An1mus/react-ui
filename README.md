@@ -1,4 +1,5 @@
-## Implemented parts: 
+## Implemented parts:
+- [Live deloy](https://an1mus.github.io/react-ui/) 
 - Please develop using React framework ✅
 - JSON data for display is taken with axios and connected through redux ✅
 - Be able to switch from main tab to other tabs - other tabs should feature a stub
