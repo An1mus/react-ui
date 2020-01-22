@@ -26,16 +26,7 @@ const RequestTableContainer = styled.div`
     }
 `;
 
-const STUB_DATA = [{
-    "name": "Cecilia Welch",
-    "email": "heather_keeling@gottlieb.ca",
-    "timestamp": "2012-04-23T01:06:43.511Z",
-    "phoneNumber": "215-293-5846",
-    "city": "Southe Mariane",
-    "status": "sent"
-}];
-
-const RequestTable = ({data = STUB_DATA}) => {
+const RequestTable = ({tableData}) => {
     const TableFields = ['Name', 'Email', 'Time', 'Phone number', 'City', 'Status'];
 
     return (
@@ -48,7 +39,7 @@ const RequestTable = ({data = STUB_DATA}) => {
                 </thead>
 
                 <tbody>
-                    {data.map((row, index) => (
+                    {tableData.map((row, index) => (
                         <TableRow key={index} rowData={row}/>
                     ))}
                 </tbody>

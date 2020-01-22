@@ -19,7 +19,11 @@ const ProgressContainer = styled.div`
     }
 `;
 
-const DataOverviewHeader = () => {
+interface Props {
+    insertions: number
+}
+
+const DataOverviewHeader = ({insertions}: Props) => {
     return (
         <UpperContainer>
             <h2>Data overview</h2>
@@ -28,7 +32,7 @@ const DataOverviewHeader = () => {
                 <Progress percentage={70}/>
 
                 <p className={'color-light'}>
-                    <b className={'color-regular'}>643</b> insertions needed to complete
+                    <b className={'color-regular'}>{insertions}</b> insertions needed to complete
                 </p>
             </ProgressContainer>
         </UpperContainer>

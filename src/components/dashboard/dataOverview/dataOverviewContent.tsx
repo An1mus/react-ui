@@ -30,24 +30,25 @@ const TermContainer = styled.div`
     flex: 1 1 0;
 `;
 
-const DataOverviewContent = () => {
+const DataOverviewContent = ({data}) => {
+    const {charts, terms, supportRequests} = data;
     return (
         <DataOverviewContainer>
             <UpperDataOverviewContainer>
                 <ChartContainer>
-                    <ChartElement title={'General results'} followers={9401} color={'blue'}/>
+                    <ChartElement title={'General results'} followers={charts.general.followersCount} color={'blue'}/>
                 </ChartContainer>
 
                 <ChartContainer>
-                    <ChartElement title={'Rating by category'} followers={3900} color={'pink'}/>
+                    <ChartElement title={'Rating by category'} followers={charts.ratingsByCategory.followersCount} color={'pink'}/>
                 </ChartContainer>
 
                 <TermContainer>
-                    <Terms />
+                    <Terms terms={terms}/>
                 </TermContainer>
             </UpperDataOverviewContainer>
 
-            <RequestTableHolder />
+            <RequestTableHolder requests={supportRequests}/>
         </DataOverviewContainer>
     );
 };

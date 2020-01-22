@@ -27,11 +27,14 @@ const TermsContainer = styled.div`
     padding: 0.5rem 0;
 `;
 
-const Terms = () => {
-    const TERMS = [85.08, 1.76, 33.42, 75.11]; //Just for presentation
+interface Props {
+    terms: number[];
+}
+
+const Terms = ({terms}: Props) => {
     return (
         <TermsContainer>
-            {TERMS.map((item, index) => (<TERM item={item} key={index} index={index}/>))}
+            {terms.map((item, index) => (<TERM item={item} key={index} index={index}/>))}
         </TermsContainer>
     )
 };

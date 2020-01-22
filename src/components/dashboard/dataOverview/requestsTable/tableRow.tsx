@@ -37,7 +37,7 @@ const TableRow = ({rowData}) => {
             <td>{timestamp}</td>
             <td>{phoneNumber}</td>
             <td>{city}</td>
-            <td>{status !== 'sent' ? <Label>Sent</Label> : <Button onClick={() => alert('Clicked')}>Send</Button> }</td>
+            <td>{status === 'sent' ? <Label>Sent</Label> : <Button onClick={() => alert('Clicked')}>Send</Button> }</td>
         </tr>
     );
 };

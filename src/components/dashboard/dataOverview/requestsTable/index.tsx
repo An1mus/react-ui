@@ -33,7 +33,7 @@ const LinkButton = styled.a`
     }
 `;
 
-const RequestTableHolder = () => {
+const RequestTableHolder = ({requests}) => {
     return (
         <RequestsTableContainer>
             <TableHeading className="d-flex flex-row">
@@ -41,7 +41,7 @@ const RequestTableHolder = () => {
                 <LinkButton className='highlighted'>add</LinkButton>
             </TableHeading>
 
-            <RequestTable />
+            <RequestTable tableData={requests}/>
         </RequestsTableContainer>
     );
 };
