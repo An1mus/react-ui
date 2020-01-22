@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading2 } from '../common/typography';
 import { PageContainer } from '../common/containers';
 import Progress from '../common/progress';
 
@@ -28,12 +27,27 @@ const ProgressContainer = styled.div`
     }
 `;
 
+const UpperDataOverviewContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+const ChartContainer = styled.div`
+    padding: 2.1rem 2.4rem;
+    width: 40%;
+`;
+
+const TermContainer = styled.div`
+    padding: 3.3rem 3.5rem;
+    width: 20%:
+`;
+
 const Dashboard = () => {
     return (
         <PageContainer>
 
             <UpperContainer>
-                <Heading2 text={'Data overview'}/>
+                <h2>Data overview</h2>
 
                 <ProgressContainer>
                     <Progress percentage={70}/>
@@ -45,7 +59,19 @@ const Dashboard = () => {
             </UpperContainer>
 
             <DataOverviewContainer>
+                <UpperDataOverviewContainer>
+                    <ChartContainer>
 
+                    </ChartContainer>
+
+                    <ChartContainer>
+
+                    </ChartContainer>
+
+                    <TermContainer>
+
+                    </TermContainer>
+                </UpperDataOverviewContainer>
             </DataOverviewContainer>
         </PageContainer>
     )
