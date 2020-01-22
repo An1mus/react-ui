@@ -1,4 +1,4 @@
-##Implemented parts: 
+## Implemented parts: 
 - Please develop using React framework ✅
 - JSON data for display is taken with axios and connected through redux ✅
 - Be able to switch from main tab to other tabs - other tabs should feature a stub
@@ -11,7 +11,7 @@ The design should be responsive (on a best-effort basis) ✅
 - You are provided with images within Zeplin where needed (for example, do not draw the
 graphs manually) 🛑 
 
-## `Your engineering assumptions`
+## Your engineering assumptions
 ### Solution thought process
 - The design implemented in a smaller resolution, so I had to rescale it from  place to place;
 - Using typescript is a usual thing;
