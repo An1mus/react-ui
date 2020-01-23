@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch, HashRouter } from 'react-router-dom';
 import {history} from '../../commons/index'
 import Nav from '../common/nav';
 import Dashboard from '../dashboard';
