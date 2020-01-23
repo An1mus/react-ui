@@ -22,7 +22,7 @@ const ContentContainer = styled.div`
 `;
 
 const Routes = () => (
-    <HashRouter>
+    <Router history={history}>
         <AppContainer>
             <Nav/>
             <ContentContainer>
@@ -36,7 +36,7 @@ const Routes = () => (
                 </Switch>
             </ContentContainer>
         </AppContainer>
-    </HashRouter>
+    </Router>
 );
 
 export default Routes;
